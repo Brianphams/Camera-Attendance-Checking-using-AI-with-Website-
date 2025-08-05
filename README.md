@@ -39,7 +39,7 @@ numpy, torch, pickle, etc.
 
 🔹 4. Recognition Processing
 
-🔹 5. Fast API ( optional ) return recognized faces from model 
+🔹 5. Fast API return recognized faces from model 
 
 gallery_file	gallery_module.py	Path to .pkl gallery
 yolo_model_path	main.py / app.py	Path to YOLOv11n weights (.pt)
