@@ -20,30 +20,6 @@ It supports both real-time display and API-based video upload for batch processi
 
 🌐 Optional API endpoint using FastAPI to upload and analyze videos.
 
-🗂️ Project Structure
-bash
-Copy
-Edit
-├── app.py                          # FastAPI server (optional)
-├── main.py                         # Local video processing and display
-├── detection.py                    # YOLOv11n model loader
-├── recognition.py                  # Core recognition logic (FaceNet, voting, best face, etc.)
-├── gallery_module.py               # Gallery loader with data augmentation
-├── Data/
-│   ├── ImageReg/                   # Registered users' images
-│   ├── gallery_facenet1.pkl        # Pickled embeddings of registered users
-│   └── best_faces/                 # Output folder for best face captures
-├── temp_videos/                    # Temporary uploaded videos (via API)
-🛠️ Requirements
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Key Libraries
-ultralytics – YOLOv11 face detection (nano model)
-
 facenet-pytorch – Face embedding using InceptionResnetV1
 
 opencv-python – Image and video processing
@@ -60,7 +36,9 @@ numpy, torch, pickle, etc.
 🔹 2. Process Video
 
 🔹 3. Upload video via API (Optional)
+
 🔹 4. Recognition Processing
+
 🔹 5. Fast API ( optional ) return recognized faces from model 
 
 gallery_file	gallery_module.py	Path to .pkl gallery
